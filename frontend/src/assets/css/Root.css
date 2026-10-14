@@ -1,0 +1,25 @@
+:root {
+  --bs-primary: #0F4C75;
+  --bs-primary-rgb: 15, 76, 117;
+  --bs-secondary: #64748B;
+  --bs-secondary-rgb: 100, 116, 139;
+  --bs-success: #198754;
+  --bs-warning: #F59E0B;
+  --bs-warning-rgb: 245, 158, 11;
+  --bs-danger: #DC3545;
+  --bs-info: #3B9AE1;
+  --bs-info-rgb: 59, 154, 225;
+  --bs-light: #F4F6F9;
+  --bs-light-rgb: 244, 246, 249;
+  --bs-dark: #1B262C;
+  --bs-dark-rgb: 27, 38, 44;
+  --bs-body-bg: #F4F6F9;
+}
+
+.btn-primary {
+  --bs-btn-bg: #0F4C75;
+  --bs-btn-border-color: #0F4C75;
+  --bs-btn-hover-bg: #0b3a5a;
+  --bs-btn-hover-border-color: #0b3a5a;
+  --bs-btn-active-bg: #0b3a5a;
+}

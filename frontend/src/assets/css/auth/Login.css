@@ -1,0 +1,82 @@
+.login-page {
+  padding: 0;
+}
+
+.login-box {
+  max-width: 400px;
+}
+
+.brand {
+  color: var(--bs-primary);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.login-box .form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.2);
+}
+
+.login-box .form-check-input:checked {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.link-primary {
+  color: var(--bs-primary) !important;
+  text-decoration: none;
+}
+
+.link-primary:hover {
+  text-decoration: underline;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+/* "or" divider */
+.divider {
+  display: flex;
+  align-items: center;
+  color: var(--bs-secondary);
+  font-size: 0.85rem;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #dee2e6;
+}
+
+.divider span {
+  padding: 0 0.75rem;
+}
+
+/* Right-side image with shadowed overlay */
+.login-image {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1400&q=80")
+    center / cover no-repeat;
+}
+
+.login-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(var(--bs-dark-rgb), 0.9),
+    rgba(var(--bs-primary-rgb), 0.55)
+  );
+}
+
+.login-caption {
+  position: relative; /* sits above the overlay */
+  z-index: 1;
+}

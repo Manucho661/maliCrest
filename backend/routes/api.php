@@ -8,8 +8,14 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+// Authentication routes
 Route::post('/register', [AuthenticationController::class, 'register'])
     ->middleware('throttle:5,1');
 
 Route::post('/login', [AuthenticationController::class, 'login'])
     ->middleware('throttle:5,1');
+
+Route::post('/reset-password', [
+    AuthenticationController::class,
+    'resetPassword',
+]);
